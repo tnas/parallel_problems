@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/parallel_problems.dir/main.c.o CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o CMakeFiles/parallel_problems.dir/samples/stencil.c.o  -o parallel_problems -rdynamic -lpthread 

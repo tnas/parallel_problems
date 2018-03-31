@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thiago/projects/parallel_problems.git/main.c
+samples/sum_vector.h
+/home/thiago/projects/parallel_problems.git/samples/sum_vector.h
+samples/stencil.h
+/home/thiago/projects/parallel_problems.git/samples/stencil.h
+
+/home/thiago/projects/parallel_problems.git/samples/stencil.c
+stencil.h
+/home/thiago/projects/parallel_problems.git/samples/stencil.h
+
+/home/thiago/projects/parallel_problems.git/samples/stencil.h
+stdio.h
+-
+stdlib.h
+-
+
+/home/thiago/projects/parallel_problems.git/samples/sum_vector.c
+sum_vector.h
+/home/thiago/projects/parallel_problems.git/samples/sum_vector.h
+
+/home/thiago/projects/parallel_problems.git/samples/sum_vector.h
+math.h
+-
+stdint.h
+-
+stdlib.h
+/home/thiago/projects/parallel_problems.git/samples/stdlib.h
+pthread.h
+/home/thiago/projects/parallel_problems.git/samples/pthread.h
+stdio.h
+/home/thiago/projects/parallel_problems.git/samples/stdio.h
+time.h
+/home/thiago/projects/parallel_problems.git/samples/time.h
+

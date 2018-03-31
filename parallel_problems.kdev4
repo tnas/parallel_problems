@@ -1,0 +1,4 @@
+[Project]
+Name=parallel_problems
+Manager=KDevCMakeManager
+VersionControl=kdevgit
