@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/parallel_samples.dir/main.c.o CMakeFiles/parallel_samples.dir/samples/sum_vector.c.o  -o parallel_samples -rdynamic -lpthread 
