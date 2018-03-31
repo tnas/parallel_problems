@@ -48,13 +48,24 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/thiago/projects/parallel_samples
+CMAKE_SOURCE_DIR = /home/thiago/projects/parallel_problems.git
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/thiago/projects/parallel_samples/build
+CMAKE_BINARY_DIR = /home/thiago/projects/parallel_problems.git/build
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target install
 install: preinstall
@@ -78,16 +89,16 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
+# Special rule for the target install/strip
+install/strip/fast: install/strip
 
-.PHONY : rebuild_cache/fast
+.PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -99,17 +110,6 @@ install/local: preinstall
 install/local/fast: install/local
 
 .PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -124,9 +124,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thiago/projects/parallel_samples/build/CMakeFiles /home/thiago/projects/parallel_samples/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thiago/projects/parallel_problems.git/build/CMakeFiles /home/thiago/projects/parallel_problems.git/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thiago/projects/parallel_samples/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thiago/projects/parallel_problems.git/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -155,17 +155,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named parallel_samples
+# Target rules for targets named parallel_problems
 
 # Build rule for target.
-parallel_samples: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 parallel_samples
-.PHONY : parallel_samples
+parallel_problems: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 parallel_problems
+.PHONY : parallel_problems
 
 # fast build rule for target.
-parallel_samples/fast:
-	$(MAKE) -f CMakeFiles/parallel_samples.dir/build.make CMakeFiles/parallel_samples.dir/build
-.PHONY : parallel_samples/fast
+parallel_problems/fast:
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/build
+.PHONY : parallel_problems/fast
 
 main.o: main.c.o
 
@@ -173,7 +173,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) -f CMakeFiles/parallel_samples.dir/build.make CMakeFiles/parallel_samples.dir/main.c.o
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -182,7 +182,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles/parallel_samples.dir/build.make CMakeFiles/parallel_samples.dir/main.c.i
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -191,7 +191,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles/parallel_samples.dir/build.make CMakeFiles/parallel_samples.dir/main.c.s
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/main.c.s
 .PHONY : main.c.s
 
 samples/sum_vector.o: samples/sum_vector.c.o
@@ -200,7 +200,7 @@ samples/sum_vector.o: samples/sum_vector.c.o
 
 # target to build an object file
 samples/sum_vector.c.o:
-	$(MAKE) -f CMakeFiles/parallel_samples.dir/build.make CMakeFiles/parallel_samples.dir/samples/sum_vector.c.o
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o
 .PHONY : samples/sum_vector.c.o
 
 samples/sum_vector.i: samples/sum_vector.c.i
@@ -209,7 +209,7 @@ samples/sum_vector.i: samples/sum_vector.c.i
 
 # target to preprocess a source file
 samples/sum_vector.c.i:
-	$(MAKE) -f CMakeFiles/parallel_samples.dir/build.make CMakeFiles/parallel_samples.dir/samples/sum_vector.c.i
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/samples/sum_vector.c.i
 .PHONY : samples/sum_vector.c.i
 
 samples/sum_vector.s: samples/sum_vector.c.s
@@ -218,7 +218,7 @@ samples/sum_vector.s: samples/sum_vector.c.s
 
 # target to generate assembly for a file
 samples/sum_vector.c.s:
-	$(MAKE) -f CMakeFiles/parallel_samples.dir/build.make CMakeFiles/parallel_samples.dir/samples/sum_vector.c.s
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/samples/sum_vector.c.s
 .PHONY : samples/sum_vector.c.s
 
 # Help Target
@@ -227,12 +227,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... rebuild_cache"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... rebuild_cache"
-	@echo "... parallel_samples"
-	@echo "... install/local"
+	@echo "... parallel_problems"
 	@echo "... install/strip"
+	@echo "... install/local"
 	@echo "... edit_cache"
 	@echo "... main.o"
 	@echo "... main.i"

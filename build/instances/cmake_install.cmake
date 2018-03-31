@@ -1,4 +1,4 @@
-# Install script for directory: /home/thiago/projects/parallel_samples/instances
+# Install script for directory: /home/thiago/projects/parallel_problems.git/instances
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
