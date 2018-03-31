@@ -194,6 +194,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/main.c.s
 .PHONY : main.c.s
 
+samples/stencil.o: samples/stencil.c.o
+
+.PHONY : samples/stencil.o
+
+# target to build an object file
+samples/stencil.c.o:
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/samples/stencil.c.o
+.PHONY : samples/stencil.c.o
+
+samples/stencil.i: samples/stencil.c.i
+
+.PHONY : samples/stencil.i
+
+# target to preprocess a source file
+samples/stencil.c.i:
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/samples/stencil.c.i
+.PHONY : samples/stencil.c.i
+
+samples/stencil.s: samples/stencil.c.s
+
+.PHONY : samples/stencil.s
+
+# target to generate assembly for a file
+samples/stencil.c.s:
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/samples/stencil.c.s
+.PHONY : samples/stencil.c.s
+
 samples/sum_vector.o: samples/sum_vector.c.o
 
 .PHONY : samples/sum_vector.o
@@ -237,6 +264,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... samples/stencil.o"
+	@echo "... samples/stencil.i"
+	@echo "... samples/stencil.s"
 	@echo "... samples/sum_vector.o"
 	@echo "... samples/sum_vector.i"
 	@echo "... samples/sum_vector.s"

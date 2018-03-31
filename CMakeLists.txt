@@ -5,7 +5,8 @@ find_package (Threads)
 
 add_executable(parallel_problems 
 	main.c
-	samples/sum_vector.c)
+	samples/sum_vector.c
+	samples/stencil.c)
 
 target_link_libraries (parallel_problems ${CMAKE_THREAD_LIBS_INIT})
 	
