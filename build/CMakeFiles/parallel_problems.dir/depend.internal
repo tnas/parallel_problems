@@ -3,6 +3,7 @@
 
 CMakeFiles/parallel_problems.dir/main.c.o
  /home/thiago/projects/parallel_problems.git/main.c
+ /home/thiago/projects/parallel_problems.git/samples/problems.h
  /home/thiago/projects/parallel_problems.git/samples/stencil.h
  /home/thiago/projects/parallel_problems.git/samples/sum_vector.h
 CMakeFiles/parallel_problems.dir/samples/stencil.c.o

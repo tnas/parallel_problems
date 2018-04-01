@@ -7,10 +7,16 @@
 #IncludeRegexTransform: 
 
 /home/thiago/projects/parallel_problems.git/main.c
+unistd.h
+-
+samples/problems.h
+/home/thiago/projects/parallel_problems.git/samples/problems.h
 samples/sum_vector.h
 /home/thiago/projects/parallel_problems.git/samples/sum_vector.h
 samples/stencil.h
 /home/thiago/projects/parallel_problems.git/samples/stencil.h
+
+/home/thiago/projects/parallel_problems.git/samples/problems.h
 
 /home/thiago/projects/parallel_problems.git/samples/stencil.c
 stencil.h
@@ -19,7 +25,13 @@ stencil.h
 /home/thiago/projects/parallel_problems.git/samples/stencil.h
 stdio.h
 -
+stdint.h
+-
 stdlib.h
+-
+pthread.h
+-
+time.h
 -
 
 /home/thiago/projects/parallel_problems.git/samples/sum_vector.c

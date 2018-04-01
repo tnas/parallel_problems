@@ -171,12 +171,6 @@ parallel_problems_BINARY_DIR:STATIC=/home/thiago/projects/parallel_problems.git/
 //Value Computed by CMake
 parallel_problems_SOURCE_DIR:STATIC=/home/thiago/projects/parallel_problems.git
 
-//Value Computed by CMake
-parallel_samples_BINARY_DIR:STATIC=/home/thiago/projects/parallel_problems.git/build
-
-//Value Computed by CMake
-parallel_samples_SOURCE_DIR:STATIC=/home/thiago/projects/parallel_problems.git
-
 
 ########################
 # INTERNAL cache entries
