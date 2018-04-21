@@ -5,7 +5,8 @@
 typedef enum 
 {
 	SUM_VECTOR,
-	STENCIL
+	STENCIL,
+	MATRIX_MULTIPLICATION
 } parallel_problems;
 
 #endif /* __PROBLEMS_H__ */

@@ -4,9 +4,9 @@ project(parallel_problems)
 find_package (Threads)
 
 add_executable(parallel_problems 
-	main.c
-	samples/sum_vector.c
-	samples/stencil.c)
+	main.cpp
+	instances/Matrix.cpp
+	instances/MatrixMultiplier.cpp)
 
 target_link_libraries (parallel_problems ${CMAKE_THREAD_LIBS_INIT})
 	

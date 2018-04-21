@@ -157,7 +157,7 @@ Name=New Compiled Binary Launcher
 Type=Native Application
 
 [Launch][Launch Configuration 0][Data]
-Arguments=-p 1 -t 4
+Arguments=-p 2 -t 8
 Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
 Dependency Action=Nothing
 EnvironmentGroup=
@@ -172,4 +172,4 @@ isExecutable=true
 VersionControlSupport=kdevgit
 
 [SourceFileTemplates]
-LastUsedTemplate=/home/thiago/.kde/share/apps/kdevfiletemplates/template_descriptions/c_gobject.desktop
+LastUsedTemplate=/home/thiago/.kde/share/apps/kdevfiletemplates/template_descriptions/cpp_basic.desktop

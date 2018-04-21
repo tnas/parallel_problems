@@ -167,86 +167,86 @@ parallel_problems/fast:
 	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/build
 .PHONY : parallel_problems/fast
 
-main.o: main.c.o
+instances/Matrix.o: instances/Matrix.cpp.o
+
+.PHONY : instances/Matrix.o
+
+# target to build an object file
+instances/Matrix.cpp.o:
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/instances/Matrix.cpp.o
+.PHONY : instances/Matrix.cpp.o
+
+instances/Matrix.i: instances/Matrix.cpp.i
+
+.PHONY : instances/Matrix.i
+
+# target to preprocess a source file
+instances/Matrix.cpp.i:
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/instances/Matrix.cpp.i
+.PHONY : instances/Matrix.cpp.i
+
+instances/Matrix.s: instances/Matrix.cpp.s
+
+.PHONY : instances/Matrix.s
+
+# target to generate assembly for a file
+instances/Matrix.cpp.s:
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/instances/Matrix.cpp.s
+.PHONY : instances/Matrix.cpp.s
+
+instances/MatrixMultiplier.o: instances/MatrixMultiplier.cpp.o
+
+.PHONY : instances/MatrixMultiplier.o
+
+# target to build an object file
+instances/MatrixMultiplier.cpp.o:
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/instances/MatrixMultiplier.cpp.o
+.PHONY : instances/MatrixMultiplier.cpp.o
+
+instances/MatrixMultiplier.i: instances/MatrixMultiplier.cpp.i
+
+.PHONY : instances/MatrixMultiplier.i
+
+# target to preprocess a source file
+instances/MatrixMultiplier.cpp.i:
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/instances/MatrixMultiplier.cpp.i
+.PHONY : instances/MatrixMultiplier.cpp.i
+
+instances/MatrixMultiplier.s: instances/MatrixMultiplier.cpp.s
+
+.PHONY : instances/MatrixMultiplier.s
+
+# target to generate assembly for a file
+instances/MatrixMultiplier.cpp.s:
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/instances/MatrixMultiplier.cpp.s
+.PHONY : instances/MatrixMultiplier.cpp.s
+
+main.o: main.cpp.o
 
 .PHONY : main.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/main.c.o
-.PHONY : main.c.o
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-main.i: main.c.i
+main.i: main.cpp.i
 
 .PHONY : main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/main.c.i
-.PHONY : main.c.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-main.s: main.c.s
+main.s: main.cpp.s
 
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/main.c.s
-.PHONY : main.c.s
-
-samples/stencil.o: samples/stencil.c.o
-
-.PHONY : samples/stencil.o
-
-# target to build an object file
-samples/stencil.c.o:
-	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/samples/stencil.c.o
-.PHONY : samples/stencil.c.o
-
-samples/stencil.i: samples/stencil.c.i
-
-.PHONY : samples/stencil.i
-
-# target to preprocess a source file
-samples/stencil.c.i:
-	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/samples/stencil.c.i
-.PHONY : samples/stencil.c.i
-
-samples/stencil.s: samples/stencil.c.s
-
-.PHONY : samples/stencil.s
-
-# target to generate assembly for a file
-samples/stencil.c.s:
-	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/samples/stencil.c.s
-.PHONY : samples/stencil.c.s
-
-samples/sum_vector.o: samples/sum_vector.c.o
-
-.PHONY : samples/sum_vector.o
-
-# target to build an object file
-samples/sum_vector.c.o:
-	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o
-.PHONY : samples/sum_vector.c.o
-
-samples/sum_vector.i: samples/sum_vector.c.i
-
-.PHONY : samples/sum_vector.i
-
-# target to preprocess a source file
-samples/sum_vector.c.i:
-	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/samples/sum_vector.c.i
-.PHONY : samples/sum_vector.c.i
-
-samples/sum_vector.s: samples/sum_vector.c.s
-
-.PHONY : samples/sum_vector.s
-
-# target to generate assembly for a file
-samples/sum_vector.c.s:
-	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/samples/sum_vector.c.s
-.PHONY : samples/sum_vector.c.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -261,15 +261,15 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... edit_cache"
+	@echo "... instances/Matrix.o"
+	@echo "... instances/Matrix.i"
+	@echo "... instances/Matrix.s"
+	@echo "... instances/MatrixMultiplier.o"
+	@echo "... instances/MatrixMultiplier.i"
+	@echo "... instances/MatrixMultiplier.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... samples/stencil.o"
-	@echo "... samples/stencil.i"
-	@echo "... samples/stencil.s"
-	@echo "... samples/sum_vector.o"
-	@echo "... samples/sum_vector.i"
-	@echo "... samples/sum_vector.s"
 .PHONY : help
 
 
