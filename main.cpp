@@ -47,11 +47,9 @@ int main(int argc, char **argv) {
 		case MATRIX_MULTIPLICATION :
 			
 			Matrix* stMatrix = new Matrix();
-			stMatrix->init();
 			stMatrix->loadDefaultElements();
 			
 			Matrix* ndMatrix = new Matrix();
-			ndMatrix->init();
 			ndMatrix->loadDefaultElements();
 			
 			MatrixMultiplier multiplier = 

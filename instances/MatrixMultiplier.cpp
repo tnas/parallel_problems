@@ -7,7 +7,6 @@ MatrixMultiplier::MatrixMultiplier(Matrix* stMatrix, Matrix* ndMatrix)
 	this->stMatrix = stMatrix;
 	this->ndMatrix = ndMatrix;
 	this->product = new Matrix(stMatrix->getDimension());
-	this->product->init();
 }
 
 

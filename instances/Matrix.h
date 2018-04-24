@@ -8,12 +8,12 @@ class Matrix
 	unsigned int dimension;
 	double** elements;
 	double sumElements;
+	void init();
 	
 public:
 	Matrix();
 	Matrix(unsigned int dim);
 	~Matrix();
-	void init();
 	void loadDefaultElements();
 	void setElement(const int row, const int col, double val);
 	double getElement(const int row, const int col);

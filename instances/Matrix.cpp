@@ -5,36 +5,34 @@ using namespace std;
 
 const int Matrix::DEFAULT_SIZE = 1500;
 
+void Matrix::init()
+{
+	this->sumElements = 0;
+	
+	this->elements = new double*[this->dimension];
+	
+	for (int row = 0; row < this->dimension; ++row)
+	{
+		this->elements[row] = new double[this->dimension];
+		
+		for (int col = 0; col < this->dimension; ++col)
+		{
+			this->elements[row][col] = 0;
+		}
+	}
+}
 
 Matrix::Matrix()
 {
 	this->dimension = DEFAULT_SIZE;
-	this->init();
+	init();
 }
 
 
 Matrix::Matrix(unsigned int dim)
 {
 	this->dimension = dim;
-	this->init();
-}
-
-
-void Matrix::init()
-{
-	this->sumElements = 0;
-	
-	elements = new double*[dimension];
-	
-	for (int row = 0; row < dimension; ++row)
-	{
-		elements[row] = new double[dimension];
-		
-		for (int col = 0; col < dimension; ++col)
-		{
-			elements[row][col] = 0;
-		}
-	}
+	init();
 }
 
 

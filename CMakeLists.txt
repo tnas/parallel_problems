@@ -10,6 +10,8 @@ if (OPENMP_FOUND)
     set (CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_EXE_LINKER_FLAGS}")
 endif()
 
+set(COMPILER_FLAGS "-Wall -O3")
+
 add_executable(parallel_problems 
 	main.cpp
 	instances/Matrix.cpp
