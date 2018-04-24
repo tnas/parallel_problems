@@ -4,10 +4,16 @@
 * Stencil: POSIX Threads Parallelization
 * Matrix Multiplication: OpenMP 
 
+### Compilation
+
+<code>
+$PROJECT_DIRECTORY$/cmake .
+</code>
+
 ### Execution
 
 <code>
-./parallel_problems -p &lt;problem&gt; -t &lt;num_threads&gt;
+./$PROJECT_DIRECTORY$/build/parallel_problems -p &lt;problem&gt; -t &lt;num_threads&gt;
 </code>
 
 <br/>
