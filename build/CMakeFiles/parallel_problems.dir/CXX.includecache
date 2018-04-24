@@ -19,6 +19,8 @@ MatrixMultiplier.h
 /home/thiago/projects/parallel_problems.git/instances/MatrixMultiplier.h
 stdio.h
 -
+omp.h
+-
 
 /home/thiago/projects/parallel_problems.git/instances/MatrixMultiplier.h
 Matrix.h
@@ -28,6 +30,8 @@ Matrix.h
 unistd.h
 -
 stdlib.h
+-
+iostream
 -
 samples/problems.h
 /home/thiago/projects/parallel_problems.git/samples/problems.h

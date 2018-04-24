@@ -1,5 +1,6 @@
 #include "MatrixMultiplier.h"
 #include <stdio.h>
+#include <omp.h>
 
 MatrixMultiplier::MatrixMultiplier(Matrix* stMatrix, Matrix* ndMatrix)
 {
@@ -16,11 +17,17 @@ MatrixMultiplier::~MatrixMultiplier()
 }
 
 
-void MatrixMultiplier::multiply()
+double MatrixMultiplier::multiply(int num_threads)
 {
 	unsigned int dim = this->product->getDimension();
 	double elementVal;
+	double init_time;
+
+	omp_set_num_threads(num_threads);
 	
+	init_time = omp_get_wtime();
+	
+	#pragma omp parallel for private(elementVal)
 	for (int row = 0; row < dim; ++row)
 	{
 		for (int col = 0; col < dim; ++col)
@@ -36,6 +43,8 @@ void MatrixMultiplier::multiply()
 			product->setElement(row, col, elementVal);
 		}
 	}
+	
+	return omp_get_wtime() - init_time;
 }
 
 Matrix* MatrixMultiplier::getProduct()

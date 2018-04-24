@@ -11,7 +11,7 @@ class MatrixMultiplier
 public:
 	MatrixMultiplier(Matrix* stMatrix, Matrix* ndMatrix);
 	~MatrixMultiplier();
-	void multiply();
+	double multiply(int num_threads);
 	Matrix* getProduct();
 };
 

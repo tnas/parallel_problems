@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include <stdlib.h>
+#include <iostream>
 #include "samples/problems.h"
 // #include "samples/sum_vector.h"
 // #include "samples/stencil.h"
@@ -44,23 +45,24 @@ int main(int argc, char **argv) {
 // 			break;
 			
 		case MATRIX_MULTIPLICATION :
-			int dimension = 2;
 			
-			Matrix* stMatrix = new Matrix(dimension);
+			Matrix* stMatrix = new Matrix();
 			stMatrix->init();
 			stMatrix->loadDefaultElements();
 			
-			Matrix* ndMatrix = new Matrix(dimension);
+			Matrix* ndMatrix = new Matrix();
 			ndMatrix->init();
 			ndMatrix->loadDefaultElements();
 			
 			MatrixMultiplier multiplier = 
 				MatrixMultiplier(stMatrix, ndMatrix);
 			
-			multiplier.multiply();
+			elapsed_time = multiplier.multiply(num_threads);
+			
 			Matrix* product = multiplier.getProduct();
 			
 			product->printSumOfElements();
+			cout << "Elapsed time: " << elapsed_time << endl;
 			
 			stMatrix->~Matrix();
 			ndMatrix->~Matrix();
