@@ -1,7 +1,6 @@
 /* inclusion guard */
 #ifndef __SUM_VECTOR_H__
 #define __SUM_VECTOR_H__
-
 #include <math.h>
 #include <stdint.h>
 #include "stdlib.h"
@@ -10,6 +9,10 @@
 #include "time.h"
 
 #define VECTOR_SIZE pow(2, 27)
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 typedef struct  
 {
@@ -26,4 +29,9 @@ void 	destroy_operator();
 double	sum_vector	(int nthreads);
 void	print_vector	(long int size);
 
+#ifdef __cplusplus
+}
+#endif
+
 #endif /* __SUM_VECTOR_H__ */
+

@@ -1,5 +1,8 @@
 #include "sum_vector.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 void init_operator()
 {
@@ -79,4 +82,6 @@ void destroy_operator()
 	free(vec_operator.result);
 }
 
-
+#ifdef __cplusplus
+}
+#endif

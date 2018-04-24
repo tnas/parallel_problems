@@ -14,6 +14,8 @@ set(COMPILER_FLAGS "-Wall -O3")
 
 add_executable(parallel_problems 
 	main.cpp
+	samples/sum_vector.c
+	samples/stencil.c
 	instances/Matrix.cpp
 	instances/MatrixMultiplier.cpp)
 

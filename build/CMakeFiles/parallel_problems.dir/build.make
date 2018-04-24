@@ -81,9 +81,57 @@ CMakeFiles/parallel_problems.dir/main.cpp.o.provides: CMakeFiles/parallel_proble
 CMakeFiles/parallel_problems.dir/main.cpp.o.provides.build: CMakeFiles/parallel_problems.dir/main.cpp.o
 
 
+CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o: CMakeFiles/parallel_problems.dir/flags.make
+CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o: ../samples/sum_vector.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thiago/projects/parallel_problems.git/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o   -c /home/thiago/projects/parallel_problems.git/samples/sum_vector.c
+
+CMakeFiles/parallel_problems.dir/samples/sum_vector.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/parallel_problems.dir/samples/sum_vector.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thiago/projects/parallel_problems.git/samples/sum_vector.c > CMakeFiles/parallel_problems.dir/samples/sum_vector.c.i
+
+CMakeFiles/parallel_problems.dir/samples/sum_vector.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parallel_problems.dir/samples/sum_vector.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thiago/projects/parallel_problems.git/samples/sum_vector.c -o CMakeFiles/parallel_problems.dir/samples/sum_vector.c.s
+
+CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o.requires:
+
+.PHONY : CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o.requires
+
+CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o.provides: CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o.requires
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o.provides.build
+.PHONY : CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o.provides
+
+CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o.provides.build: CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o
+
+
+CMakeFiles/parallel_problems.dir/samples/stencil.c.o: CMakeFiles/parallel_problems.dir/flags.make
+CMakeFiles/parallel_problems.dir/samples/stencil.c.o: ../samples/stencil.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thiago/projects/parallel_problems.git/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/parallel_problems.dir/samples/stencil.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parallel_problems.dir/samples/stencil.c.o   -c /home/thiago/projects/parallel_problems.git/samples/stencil.c
+
+CMakeFiles/parallel_problems.dir/samples/stencil.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/parallel_problems.dir/samples/stencil.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thiago/projects/parallel_problems.git/samples/stencil.c > CMakeFiles/parallel_problems.dir/samples/stencil.c.i
+
+CMakeFiles/parallel_problems.dir/samples/stencil.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parallel_problems.dir/samples/stencil.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thiago/projects/parallel_problems.git/samples/stencil.c -o CMakeFiles/parallel_problems.dir/samples/stencil.c.s
+
+CMakeFiles/parallel_problems.dir/samples/stencil.c.o.requires:
+
+.PHONY : CMakeFiles/parallel_problems.dir/samples/stencil.c.o.requires
+
+CMakeFiles/parallel_problems.dir/samples/stencil.c.o.provides: CMakeFiles/parallel_problems.dir/samples/stencil.c.o.requires
+	$(MAKE) -f CMakeFiles/parallel_problems.dir/build.make CMakeFiles/parallel_problems.dir/samples/stencil.c.o.provides.build
+.PHONY : CMakeFiles/parallel_problems.dir/samples/stencil.c.o.provides
+
+CMakeFiles/parallel_problems.dir/samples/stencil.c.o.provides.build: CMakeFiles/parallel_problems.dir/samples/stencil.c.o
+
+
 CMakeFiles/parallel_problems.dir/instances/Matrix.cpp.o: CMakeFiles/parallel_problems.dir/flags.make
 CMakeFiles/parallel_problems.dir/instances/Matrix.cpp.o: ../instances/Matrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thiago/projects/parallel_problems.git/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/parallel_problems.dir/instances/Matrix.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thiago/projects/parallel_problems.git/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/parallel_problems.dir/instances/Matrix.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/parallel_problems.dir/instances/Matrix.cpp.o -c /home/thiago/projects/parallel_problems.git/instances/Matrix.cpp
 
 CMakeFiles/parallel_problems.dir/instances/Matrix.cpp.i: cmake_force
@@ -107,7 +155,7 @@ CMakeFiles/parallel_problems.dir/instances/Matrix.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/parallel_problems.dir/instances/MatrixMultiplier.cpp.o: CMakeFiles/parallel_problems.dir/flags.make
 CMakeFiles/parallel_problems.dir/instances/MatrixMultiplier.cpp.o: ../instances/MatrixMultiplier.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thiago/projects/parallel_problems.git/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/parallel_problems.dir/instances/MatrixMultiplier.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thiago/projects/parallel_problems.git/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/parallel_problems.dir/instances/MatrixMultiplier.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/parallel_problems.dir/instances/MatrixMultiplier.cpp.o -c /home/thiago/projects/parallel_problems.git/instances/MatrixMultiplier.cpp
 
 CMakeFiles/parallel_problems.dir/instances/MatrixMultiplier.cpp.i: cmake_force
@@ -132,6 +180,8 @@ CMakeFiles/parallel_problems.dir/instances/MatrixMultiplier.cpp.o.provides.build
 # Object files for target parallel_problems
 parallel_problems_OBJECTS = \
 "CMakeFiles/parallel_problems.dir/main.cpp.o" \
+"CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o" \
+"CMakeFiles/parallel_problems.dir/samples/stencil.c.o" \
 "CMakeFiles/parallel_problems.dir/instances/Matrix.cpp.o" \
 "CMakeFiles/parallel_problems.dir/instances/MatrixMultiplier.cpp.o"
 
@@ -139,11 +189,13 @@ parallel_problems_OBJECTS = \
 parallel_problems_EXTERNAL_OBJECTS =
 
 parallel_problems: CMakeFiles/parallel_problems.dir/main.cpp.o
+parallel_problems: CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o
+parallel_problems: CMakeFiles/parallel_problems.dir/samples/stencil.c.o
 parallel_problems: CMakeFiles/parallel_problems.dir/instances/Matrix.cpp.o
 parallel_problems: CMakeFiles/parallel_problems.dir/instances/MatrixMultiplier.cpp.o
 parallel_problems: CMakeFiles/parallel_problems.dir/build.make
 parallel_problems: CMakeFiles/parallel_problems.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thiago/projects/parallel_problems.git/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable parallel_problems"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thiago/projects/parallel_problems.git/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable parallel_problems"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/parallel_problems.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -152,6 +204,8 @@ CMakeFiles/parallel_problems.dir/build: parallel_problems
 .PHONY : CMakeFiles/parallel_problems.dir/build
 
 CMakeFiles/parallel_problems.dir/requires: CMakeFiles/parallel_problems.dir/main.cpp.o.requires
+CMakeFiles/parallel_problems.dir/requires: CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o.requires
+CMakeFiles/parallel_problems.dir/requires: CMakeFiles/parallel_problems.dir/samples/stencil.c.o.requires
 CMakeFiles/parallel_problems.dir/requires: CMakeFiles/parallel_problems.dir/instances/Matrix.cpp.o.requires
 CMakeFiles/parallel_problems.dir/requires: CMakeFiles/parallel_problems.dir/instances/MatrixMultiplier.cpp.o.requires
 

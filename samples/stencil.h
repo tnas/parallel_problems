@@ -11,6 +11,10 @@
 #define MESH_DIMENSION 10000
 #define STENCIL_DIMENSION 3
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef double** mesh_t;
 typedef int stencil_t[STENCIL_DIMENSION][STENCIL_DIMENSION];
 typedef struct 
@@ -28,5 +32,8 @@ double	run_stencil(int nthreads);
 void 	destroy_stencil();
 void	print_stencil();
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* __STENCIL_H__ */

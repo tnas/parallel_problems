@@ -1,5 +1,11 @@
 #include "stencil.h"
 
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+	
+	
 void init_stencil()
 {
 	stencil[0][0] = stencil[0][2] =
@@ -137,4 +143,6 @@ void destroy_stencil()
 	free(mesh);
 }
 
-
+#ifdef __cplusplus
+}
+#endif

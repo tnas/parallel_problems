@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <iostream>
 #include "samples/problems.h"
-// #include "samples/sum_vector.h"
-// #include "samples/stencil.h"
+#include "samples/sum_vector.h"
+#include "samples/stencil.h"
 #include "instances/Matrix.h"
 #include "instances/MatrixMultiplier.h"
 
@@ -30,19 +30,19 @@ int main(int argc, char **argv) {
 	
 	switch (problem)
 	{
-// 		case SUM_VECTOR :
-// 			init_operator();
-// 			elapsed_time = sum_vector(num_threads);
-// 			printf("[Sum of Vector] Threads: %d - Elapsed Time: %lf\n", num_threads, elapsed_time);
-// 			destroy_operator();
-// 			break;
-// 			
-// 		case STENCIL :
-// 			init_stencil();
-// 			elapsed_time = run_stencil(num_threads);
-// 			printf("[Stencil] Threads: %d - Elapsed Time: %lf\n", num_threads, elapsed_time);
-// 			destroy_stencil();
-// 			break;
+		case SUM_VECTOR :
+			init_operator();
+			elapsed_time = sum_vector(num_threads);
+			printf("[Sum of Vector] Threads: %d - Elapsed Time: %lf\n", num_threads, elapsed_time);
+			destroy_operator();
+			break;
+			
+		case STENCIL :
+			init_stencil();
+			elapsed_time = run_stencil(num_threads);
+			printf("[Stencil] Threads: %d - Elapsed Time: %lf\n", num_threads, elapsed_time);
+			destroy_stencil();
+			break;
 			
 		case MATRIX_MULTIPLICATION :
 			
