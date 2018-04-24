@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thiago/projects/parallel_problems.git/instances/Matrix.cpp
+Matrix.h
+/home/thiago/projects/parallel_problems.git/instances/Matrix.h
+iostream
+-
+
+/home/thiago/projects/parallel_problems.git/instances/Matrix.h
+
+/home/thiago/projects/parallel_problems.git/instances/MatrixMultiplier.cpp
+MatrixMultiplier.h
+/home/thiago/projects/parallel_problems.git/instances/MatrixMultiplier.h
+stdio.h
+-
+
+/home/thiago/projects/parallel_problems.git/instances/MatrixMultiplier.h
+Matrix.h
+/home/thiago/projects/parallel_problems.git/instances/Matrix.h
+
+/home/thiago/projects/parallel_problems.git/main.cpp
+unistd.h
+-
+stdlib.h
+-
+samples/problems.h
+/home/thiago/projects/parallel_problems.git/samples/problems.h
+instances/Matrix.h
+/home/thiago/projects/parallel_problems.git/instances/Matrix.h
+instances/MatrixMultiplier.h
+/home/thiago/projects/parallel_problems.git/instances/MatrixMultiplier.h
+
+/home/thiago/projects/parallel_problems.git/samples/problems.h
+
