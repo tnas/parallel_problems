@@ -9,6 +9,20 @@
 
 using namespace std;
 
+
+/* *****************************************************
+ * Program Parameters:
+ * 
+ * -p <algorithm>:
+ * 	0: Sum of vectors
+ * 	1: Stencil
+ * 	2: Matrix Multiplication
+ * 
+ * -t <number of threads>
+ * 
+ * *****************************************************
+ */
+
 int main(int argc, char **argv) {
 
 	int opt, num_threads, problem;
