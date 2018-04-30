@@ -11,7 +11,7 @@ cd $PROJECT_DIRECTORY$
 
 cmake .
 
-make all
+make alll
 </code>
 
 ### Execution
