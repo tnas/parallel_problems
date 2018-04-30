@@ -8,6 +8,7 @@
 
 <code>
 $PROJECT_DIRECTORY$/cmake .
+make all
 </code>
 
 ### Execution
