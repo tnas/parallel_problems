@@ -1,4 +1,4 @@
-# Install script for directory: /home/thiago/projects/parallel_problems.git
+# Install script for directory: /home/thiago/projects/parallel_problems
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/parallel_problems"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/thiago/projects/parallel_problems.git/build/parallel_problems")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/thiago/projects/parallel_problems/build/parallel_problems")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/parallel_problems" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/parallel_problems")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -50,8 +50,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/thiago/projects/parallel_problems.git/build/instances/cmake_install.cmake")
-  include("/home/thiago/projects/parallel_problems.git/build/samples/cmake_install.cmake")
+  include("/home/thiago/projects/parallel_problems/build/instances/cmake_install.cmake")
+  include("/home/thiago/projects/parallel_problems/build/samples/cmake_install.cmake")
 
 endif()
 
@@ -63,5 +63,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/thiago/projects/parallel_problems.git/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/thiago/projects/parallel_problems/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

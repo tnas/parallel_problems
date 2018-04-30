@@ -12,6 +12,7 @@ public:
 	MatrixMultiplier(Matrix* stMatrix, Matrix* ndMatrix);
 	~MatrixMultiplier();
 	double multiply(int num_threads);
+	double optimizedMultiply(int num_threads);
 	Matrix* getProduct();
 };
 

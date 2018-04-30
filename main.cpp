@@ -70,18 +70,20 @@ int main(int argc, char **argv) {
 				MatrixMultiplier(stMatrix, ndMatrix);
 			
 			elapsed_time = multiplier.multiply(num_threads);
-			
 			Matrix* product = multiplier.getProduct();
-			
 			product->printSumOfElements();
-			cout << "Elapsed time: " << elapsed_time << endl;
+			printf("Elapsed time: %.6lf secs\n\n", elapsed_time);
+			
+			elapsed_time = multiplier.optimizedMultiply(num_threads);
+			product = multiplier.getProduct();
+			product->printSumOfElements();
+			printf("Elapsed time (optimized): %.6lf secs", elapsed_time);
 			
 			stMatrix->~Matrix();
 			ndMatrix->~Matrix();
 				
 			break;
 	}
-	
     
 	return 0;
 }

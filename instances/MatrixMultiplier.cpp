@@ -46,6 +46,38 @@ double MatrixMultiplier::multiply(int num_threads)
 	return omp_get_wtime() - init_time;
 }
 
+
+double MatrixMultiplier::optimizedMultiply(int num_threads)
+{
+	unsigned int j, dim = this->product->getDimension();
+	double elementVal, fixed;
+	double init_time;
+
+	omp_set_num_threads(num_threads);
+	
+	init_time = omp_get_wtime();
+	
+	#pragma omp parallel for private(elementVal,fixed,j)
+	for (unsigned int i = 0; i < dim; ++i)
+	{
+		for (unsigned int k = 0; k < dim; ++k)
+		{
+			elementVal = 0;
+			fixed      = stMatrix->getElement(i, k);
+			
+			for (j = 0; j < dim; ++j)
+			{
+				elementVal += fixed * ndMatrix->getElement(k, j);
+			}
+			
+			product->setElement(i, j, elementVal);
+		}
+	}
+	
+	return omp_get_wtime() - init_time;
+}
+
+
 Matrix* MatrixMultiplier::getProduct()
 {
 	return this->product;

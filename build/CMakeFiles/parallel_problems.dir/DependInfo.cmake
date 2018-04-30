@@ -5,8 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/thiago/projects/parallel_problems.git/samples/stencil.c" "/home/thiago/projects/parallel_problems.git/build/CMakeFiles/parallel_problems.dir/samples/stencil.c.o"
-  "/home/thiago/projects/parallel_problems.git/samples/sum_vector.c" "/home/thiago/projects/parallel_problems.git/build/CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o"
+  "/home/thiago/projects/parallel_problems/samples/stencil.c" "/home/thiago/projects/parallel_problems/build/CMakeFiles/parallel_problems.dir/samples/stencil.c.o"
+  "/home/thiago/projects/parallel_problems/samples/sum_vector.c" "/home/thiago/projects/parallel_problems/build/CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -14,9 +14,9 @@ set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/thiago/projects/parallel_problems.git/instances/Matrix.cpp" "/home/thiago/projects/parallel_problems.git/build/CMakeFiles/parallel_problems.dir/instances/Matrix.cpp.o"
-  "/home/thiago/projects/parallel_problems.git/instances/MatrixMultiplier.cpp" "/home/thiago/projects/parallel_problems.git/build/CMakeFiles/parallel_problems.dir/instances/MatrixMultiplier.cpp.o"
-  "/home/thiago/projects/parallel_problems.git/main.cpp" "/home/thiago/projects/parallel_problems.git/build/CMakeFiles/parallel_problems.dir/main.cpp.o"
+  "/home/thiago/projects/parallel_problems/instances/Matrix.cpp" "/home/thiago/projects/parallel_problems/build/CMakeFiles/parallel_problems.dir/instances/Matrix.cpp.o"
+  "/home/thiago/projects/parallel_problems/instances/MatrixMultiplier.cpp" "/home/thiago/projects/parallel_problems/build/CMakeFiles/parallel_problems.dir/instances/MatrixMultiplier.cpp.o"
+  "/home/thiago/projects/parallel_problems/main.cpp" "/home/thiago/projects/parallel_problems/build/CMakeFiles/parallel_problems.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
