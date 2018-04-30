@@ -2,7 +2,7 @@
 
 * Sum of two vectors: POSIX Threads Parallelization
 * Stencil: POSIX Threads Parallelization
-* Matrix Multiplication: OpenMP 
+* Matrix Multiplication: OpenMP Parallelization
 
 ### Compilation
 
