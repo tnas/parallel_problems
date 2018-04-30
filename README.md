@@ -14,9 +14,9 @@ make alll
 
 ### Execution
 
-<code>
+```
 ./$PROJECT_DIRECTORY$/build/parallel_problems -p &lt;problem&gt; -t &lt;num_threads&gt;
-</code>
+```
 
 <br/>
 
