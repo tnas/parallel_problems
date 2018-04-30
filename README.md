@@ -17,9 +17,6 @@ make alll
 ```
 ./$PROJECT_DIRECTORY$/build/parallel_problems -p <problem> -t <num_threads>;
 ```
-
-<br/>
-
 <code>
   &lt;problem&gt;
 </code>
