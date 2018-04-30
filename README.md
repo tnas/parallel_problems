@@ -6,13 +6,11 @@
 
 ### Compilation
 
-<code>
+```
 cd $PROJECT_DIRECTORY$
-
 cmake .
-
 make alll
-</code>
+```
 
 ### Execution
 
