@@ -1,4 +1,4 @@
-# Examples of Some Traditional Parallel Problems
+# Some Traditional Parallel Problems
 
 * Sum of two vectors: POSIX Threads Parallelization
 * Stencil: POSIX Threads Parallelization
