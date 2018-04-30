@@ -7,7 +7,12 @@
 ### Compilation
 
 <code>
-$PROJECT_DIRECTORY$/cmake .
+cd $PROJECT_DIRECTORY$ 
+</code>  
+<code>
+cmake .
+</code>
+<code>
 make all
 </code>
 
