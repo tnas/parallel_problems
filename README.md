@@ -1,8 +1,9 @@
-# Some Traditional Parallel Problems
+# Parallel Problems
 
 * Sum of two vectors: POSIX Threads Parallelization
 * Stencil: POSIX Threads Parallelization
 * Matrix Multiplication: OpenMP Parallelization
+* Stencil: OpenMP Parallelization
 
 ### Compilation
 
@@ -22,8 +23,9 @@ make alll
 </code>
 
  * 	0: Sum of vectors
- * 	1: Stencil
+ * 	1: Stencil PThreads
  * 	2: Matrix multiplication
+ *  3: Stencil OpenMP
  
 ### Machine Description
 * CPU: Intel(R) Core(TM) i7-3610QM CPU @ 2.30GHz
