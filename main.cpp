@@ -1,11 +1,11 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <iostream>
-#include "samples/problems.h"
-#include "samples/sum_vector.h"
-#include "samples/stencil.h"
-#include "instances/Matrix.h"
-#include "instances/MatrixMultiplier.h"
+#include "problems.h"
+#include "pthreads/sum_vector.h"
+#include "pthreads/stencil.h"
+#include "openmp/Matrix.h"
+#include "openmp/MatrixMultiplier.h"
 
 using namespace std;
 

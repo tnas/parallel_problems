@@ -1,1 +1,0 @@
-/usr/bin/c++    -fopenmp -g    CMakeFiles/parallel_problems.dir/main.cpp.o CMakeFiles/parallel_problems.dir/samples/sum_vector.c.o CMakeFiles/parallel_problems.dir/samples/stencil.c.o CMakeFiles/parallel_problems.dir/instances/Matrix.cpp.o CMakeFiles/parallel_problems.dir/instances/MatrixMultiplier.cpp.o  -o parallel_problems -rdynamic -lpthread 

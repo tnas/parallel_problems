@@ -14,14 +14,14 @@ set(COMPILER_FLAGS "-Wall -O3")
 
 add_executable(parallel_problems 
 	main.cpp
-	samples/sum_vector.c
-	samples/stencil.c
-	instances/Matrix.cpp
-	instances/MatrixMultiplier.cpp)
+	pthreads/sum_vector.c
+	pthreads/stencil.c
+	openmp/Matrix.cpp
+	openmp/MatrixMultiplier.cpp)
 
 target_link_libraries (parallel_problems ${CMAKE_THREAD_LIBS_INIT})
 	
 install(TARGETS parallel_problems RUNTIME DESTINATION bin)
 
-add_subdirectory(instances)
-add_subdirectory(samples)
+add_subdirectory(openmp)
+add_subdirectory(pthreads)
